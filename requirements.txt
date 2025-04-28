@@ -1,0 +1,8 @@
+apache-airflow==2.5.1
+psycopg2-binary
+SQLAlchemy
+alembic
+python-dotenv
+pydantic
+feedparser
+requests
