@@ -1,0 +1,98 @@
+[2025-04-28T17:19:28.894-0400] {processor.py:153} INFO - Started process (PID=86999) to work on /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py
+[2025-04-28T17:19:28.906-0400] {processor.py:743} INFO - Processing file /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py for tasks to queue
+[2025-04-28T17:19:28.906-0400] {logging_mixin.py:137} INFO - [2025-04-28T17:19:28.906-0400] {dagbag.py:538} INFO - Filling up the DagBag from /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py
+[2025-04-28T17:19:28.941-0400] {logging_mixin.py:137} INFO - [2025-04-28T17:19:28.926-0400] {dagbag.py:343} ERROR - Failed to import: /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py
+Traceback (most recent call last):
+  File "/Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py", line 5, in <module>
+    from src.ingest.eventbrite import fetch_eventbrite
+ModuleNotFoundError: No module named 'src'
+[2025-04-28T17:19:28.941-0400] {processor.py:755} WARNING - No viable dags retrieved from /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py
+[2025-04-28T17:19:29.385-0400] {processor.py:175} INFO - Processing /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py took 0.492 seconds
+[2025-04-28T17:20:00.325-0400] {processor.py:153} INFO - Started process (PID=87072) to work on /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py
+[2025-04-28T17:20:00.338-0400] {processor.py:743} INFO - Processing file /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py for tasks to queue
+[2025-04-28T17:20:00.338-0400] {logging_mixin.py:137} INFO - [2025-04-28T17:20:00.338-0400] {dagbag.py:538} INFO - Filling up the DagBag from /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py
+[2025-04-28T17:20:00.356-0400] {logging_mixin.py:137} INFO - [2025-04-28T17:20:00.355-0400] {dagbag.py:343} ERROR - Failed to import: /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py
+Traceback (most recent call last):
+  File "/Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py", line 5, in <module>
+    from src.ingest.eventbrite import fetch_eventbrite
+ModuleNotFoundError: No module named 'src'
+[2025-04-28T17:20:00.356-0400] {processor.py:755} WARNING - No viable dags retrieved from /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py
+[2025-04-28T17:20:00.906-0400] {processor.py:175} INFO - Processing /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py took 0.582 seconds
+[2025-04-28T17:20:32.446-0400] {processor.py:153} INFO - Started process (PID=87102) to work on /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py
+[2025-04-28T17:20:32.459-0400] {processor.py:743} INFO - Processing file /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py for tasks to queue
+[2025-04-28T17:20:32.459-0400] {logging_mixin.py:137} INFO - [2025-04-28T17:20:32.459-0400] {dagbag.py:538} INFO - Filling up the DagBag from /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py
+[2025-04-28T17:20:32.485-0400] {logging_mixin.py:137} INFO - [2025-04-28T17:20:32.484-0400] {dagbag.py:343} ERROR - Failed to import: /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py
+Traceback (most recent call last):
+  File "/Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py", line 5, in <module>
+    from src.ingest.eventbrite import fetch_eventbrite
+ModuleNotFoundError: No module named 'src'
+[2025-04-28T17:20:32.485-0400] {processor.py:755} WARNING - No viable dags retrieved from /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py
+[2025-04-28T17:20:32.917-0400] {processor.py:175} INFO - Processing /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py took 0.471 seconds
+[2025-04-28T17:21:03.863-0400] {processor.py:153} INFO - Started process (PID=87165) to work on /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py
+[2025-04-28T17:21:03.875-0400] {processor.py:743} INFO - Processing file /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py for tasks to queue
+[2025-04-28T17:21:03.876-0400] {logging_mixin.py:137} INFO - [2025-04-28T17:21:03.876-0400] {dagbag.py:538} INFO - Filling up the DagBag from /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py
+[2025-04-28T17:21:03.903-0400] {logging_mixin.py:137} INFO - [2025-04-28T17:21:03.902-0400] {dagbag.py:343} ERROR - Failed to import: /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py
+Traceback (most recent call last):
+  File "/Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py", line 5, in <module>
+    from src.ingest.eventbrite import fetch_eventbrite
+ModuleNotFoundError: No module named 'src'
+[2025-04-28T17:21:03.903-0400] {processor.py:755} WARNING - No viable dags retrieved from /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py
+[2025-04-28T17:21:04.394-0400] {processor.py:175} INFO - Processing /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py took 0.531 seconds
+[2025-04-28T17:21:35.650-0400] {processor.py:153} INFO - Started process (PID=87238) to work on /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py
+[2025-04-28T17:21:35.670-0400] {processor.py:743} INFO - Processing file /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py for tasks to queue
+[2025-04-28T17:21:35.670-0400] {logging_mixin.py:137} INFO - [2025-04-28T17:21:35.670-0400] {dagbag.py:538} INFO - Filling up the DagBag from /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py
+[2025-04-28T17:21:35.683-0400] {logging_mixin.py:137} INFO - [2025-04-28T17:21:35.682-0400] {dagbag.py:343} ERROR - Failed to import: /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py
+Traceback (most recent call last):
+  File "/Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py", line 5, in <module>
+    from src.ingest.eventbrite import fetch_eventbrite
+ModuleNotFoundError: No module named 'src'
+[2025-04-28T17:21:35.684-0400] {processor.py:755} WARNING - No viable dags retrieved from /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py
+[2025-04-28T17:21:36.196-0400] {processor.py:175} INFO - Processing /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py took 0.546 seconds
+[2025-04-28T17:22:07.101-0400] {processor.py:153} INFO - Started process (PID=87307) to work on /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py
+[2025-04-28T17:22:07.113-0400] {processor.py:743} INFO - Processing file /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py for tasks to queue
+[2025-04-28T17:22:07.113-0400] {logging_mixin.py:137} INFO - [2025-04-28T17:22:07.113-0400] {dagbag.py:538} INFO - Filling up the DagBag from /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py
+[2025-04-28T17:22:07.129-0400] {logging_mixin.py:137} INFO - [2025-04-28T17:22:07.128-0400] {dagbag.py:343} ERROR - Failed to import: /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py
+Traceback (most recent call last):
+  File "/Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py", line 5, in <module>
+    from src.ingest.eventbrite import fetch_eventbrite
+ModuleNotFoundError: No module named 'src'
+[2025-04-28T17:22:07.129-0400] {processor.py:755} WARNING - No viable dags retrieved from /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py
+[2025-04-28T17:22:07.693-0400] {processor.py:175} INFO - Processing /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py took 0.593 seconds
+[2025-04-28T17:22:38.593-0400] {processor.py:153} INFO - Started process (PID=87391) to work on /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py
+[2025-04-28T17:22:38.610-0400] {processor.py:743} INFO - Processing file /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py for tasks to queue
+[2025-04-28T17:22:38.610-0400] {logging_mixin.py:137} INFO - [2025-04-28T17:22:38.610-0400] {dagbag.py:538} INFO - Filling up the DagBag from /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py
+[2025-04-28T17:22:38.626-0400] {logging_mixin.py:137} INFO - [2025-04-28T17:22:38.625-0400] {dagbag.py:343} ERROR - Failed to import: /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py
+Traceback (most recent call last):
+  File "/Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py", line 5, in <module>
+    from src.ingest.eventbrite import fetch_eventbrite
+ModuleNotFoundError: No module named 'src'
+[2025-04-28T17:22:38.626-0400] {processor.py:755} WARNING - No viable dags retrieved from /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py
+[2025-04-28T17:22:39.117-0400] {processor.py:175} INFO - Processing /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py took 0.524 seconds

@@ -1,0 +1,67 @@
+[2025-04-28T17:17:07.265-0400] {manager.py:483} INFO - Processing files using up to 1 processes at a time 
+[2025-04-28T17:17:07.267-0400] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2025-04-28T17:17:07.267-0400] {manager.py:485} INFO - Checking for new files in /Users/zihaomo/pipeline/airflow_home/dags every 300 seconds
+[2025-04-28T17:17:07.267-0400] {manager.py:726} INFO - Searching for files in /Users/zihaomo/pipeline/airflow_home/dags
+[2025-04-28T17:17:07.267-0400] {manager.py:729} INFO - There are 0 files in /Users/zihaomo/pipeline/airflow_home/dags
+[2025-04-28T17:19:19.931-0400] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2025-04-28T17:19:28.015-0400] {manager.py:483} INFO - Processing files using up to 1 processes at a time 
+[2025-04-28T17:19:28.016-0400] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2025-04-28T17:19:28.016-0400] {manager.py:485} INFO - Checking for new files in /Users/zihaomo/pipeline/airflow_home/dags every 300 seconds
+[2025-04-28T17:19:28.016-0400] {manager.py:726} INFO - Searching for files in /Users/zihaomo/pipeline/airflow_home/dags
+[2025-04-28T17:19:28.017-0400] {manager.py:729} INFO - There are 1 files in /Users/zihaomo/pipeline/airflow_home/dags
+[2025-04-28T17:19:29.548-0400] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py                           0           1  1.12s           2025-04-28T21:19:29
+================================================================================
+[2025-04-28T17:20:01.094-0400] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py                           0           1  1.40s           2025-04-28T21:20:01
+================================================================================
+[2025-04-28T17:20:33.115-0400] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py                           0           1  1.19s           2025-04-28T21:20:33
+================================================================================
+[2025-04-28T17:21:04.540-0400] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py                           0           1  1.12s           2025-04-28T21:21:04
+================================================================================
+[2025-04-28T17:21:36.365-0400] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py                           0           1  1.62s           2025-04-28T21:21:36
+================================================================================
+[2025-04-28T17:22:07.858-0400] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py                           0           1  1.21s           2025-04-28T21:22:07
+================================================================================
+[2025-04-28T17:22:39.285-0400] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py                           0           1  1.22s           2025-04-28T21:22:39
+================================================================================
