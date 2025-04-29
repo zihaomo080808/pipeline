@@ -1,10 +1,9 @@
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime, timedelta
-import sys
-import os
+import sys, os
 
-# Add the project root to the Python path
+# ensure project root is on PYTHONPATH
 sys.path.insert(0, os.path.abspath(os.path.dirname(os.path.dirname(os.path.dirname(__file__)))))
 
 from src.ingest.browseruse_scraper import ingest_browseruse
@@ -24,13 +23,13 @@ with DAG(
     schedule_interval="@daily",
     catchup=False,
     max_active_runs=1,
-    tags=["ingest","browser"],
+    tags=["ingest", "browser"],
 ) as dag:
 
     scrape = PythonOperator(
         task_id="ingest_browseruse",
         python_callable=ingest_browseruse,
-        pool="browser_pool",  # define this pool in Airflow UI with 1-2 slots
+        pool="browser_pool",  # create this pool with 1-2 slots in the Airflow UI
     )
 
     transform = PythonOperator(

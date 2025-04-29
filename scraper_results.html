@@ -1,0 +1,269 @@
+
+<\!DOCTYPE html>
+<html>
+<head>
+    <title>Browser Scraper Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .dashboard {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .source-stats {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .stat-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            flex: 1;
+            text-align: center;
+        }
+        .stat-card h3 {
+            margin-top: 0;
+            color: #666;
+        }
+        .stat-card .count {
+            font-size: 32px;
+            font-weight: bold;
+            color: #4285f4;
+        }
+        .filters {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .filter-btn {
+            padding: 8px 12px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .filter-btn.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f8f8f8;
+            font-weight: bold;
+            color: #333;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        .no-data {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            font-style: italic;
+        }
+        .source-tag {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .source-eventbrite {
+            background-color: #f95e5e;
+            color: white;
+        }
+        .source-airtable {
+            background-color: #5e91f9;
+            color: white;
+        }
+        .source-browseruse {
+            background-color: #5ef9a3;
+            color: black;
+        }
+        .source-firecrawl {
+            background-color: #f9c45e;
+            color: black;
+        }
+        .description {
+            max-width: 300px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .refresh-note {
+            font-style: italic;
+            color: #666;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Scraper Results Dashboard</h1>
+    
+    <div class="dashboard">
+        <div class="source-stats">
+
+            <div class="stat-card">
+                <h3>Browser Scraper</h3>
+                <div class="count">0</div>
+                <p>No data yet - scraper is running or has not completed</p>
+            </div>
+    
+        </div>
+        
+        <h2>Latest Raw Opportunities</h2>
+        
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="eventbrite">Eventbrite</button>
+            <button class="filter-btn" data-filter="browseruse">Browser-Use</button>
+            <button class="filter-btn" data-filter="firecrawl">Firecrawl</button>
+        </div>
+        
+        <table id="opportunities-table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Source</th>
+                    <th>Link</th>
+                    <th>Ingested At</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr class="opportunity" data-source="eventbrite">
+                    <td>Girlhacks Hackathon 2025</td>
+                    <td class="description"><p>Girlhacks Hackathon 2025 is our biggest event of the year and a wonderful opportunity to unleash one’s creativity and push the boundaries of possib...</td>
+                    <td><span class="source-tag source-eventbrite">eventbrite</span></td>
+                    <td><a href="https://dev.to/sowmya_manjanatha_eeff8ac/girlhacks-hackathon-2025-16cp" target="_blank">View</a></td>
+                    <td>2025-04-28 23:09:36</td>
+                </tr>
+                <tr class="opportunity" data-source="eventbrite">
+                    <td>OneShot Hackathon: Win $3K With A Single Prompt</td>
+                    <td class="description"><p><a class="article-body-image-wrapper" href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/h...</td>
+                    <td><span class="source-tag source-eventbrite">eventbrite</span></td>
+                    <td><a href="https://dev.to/gibsonai/oneshot-hackathon-win-3k-with-a-single-prompt-j2j" target="_blank">View</a></td>
+                    <td>2025-04-28 23:09:36</td>
+                </tr>
+                <tr class="opportunity" data-source="eventbrite">
+                    <td>Hack the Grid: LUKSO's Final Call to Web3 Builders with $150K in Prizes</td>
+                    <td class="description"><p><em>LUKSO’s “Hack the Grid” hackathon is in its final phase, giving developers just under two weeks to build and submit mini-dApps powered by smart...</td>
+                    <td><span class="source-tag source-eventbrite">eventbrite</span></td>
+                    <td><a href="https://dev.to/alexonchain/hack-the-grid-luksos-final-call-to-web3-builders-with-150k-in-prizes-1phb" target="_blank">View</a></td>
+                    <td>2025-04-28 23:09:36</td>
+                </tr>
+                <tr class="opportunity" data-source="eventbrite">
+                    <td>Celebrating our step towards sustainability this Environment Day — because change begins with us.</td>
+                    <td class="description"><div class="ltag__link">
+  <a class="ltag__link__link" href="/denyme24">
+    <div class="ltag__link__pic">
+      <img alt="denyme24" src="https://medi...</td>
+                    <td><span class="source-tag source-eventbrite">eventbrite</span></td>
+                    <td><a href="https://dev.to/khushihiagrawal/celebrating-our-step-towards-sustainability-this-environment-day-because-change-begins-with-us-5aec" target="_blank">View</a></td>
+                    <td>2025-04-28 23:09:36</td>
+                </tr>
+                <tr class="opportunity" data-source="eventbrite">
+                    <td>Hackathon's experience</td>
+                    <td class="description"><p>Hello Guys,</p>
+
+<p>Today I have participated in Build2Learn Hackathon for the second time. It was a good community to make friends and make new id...</td>
+                    <td><span class="source-tag source-eventbrite">eventbrite</span></td>
+                    <td><a href="https://dev.to/vasutamil19/hackathons-experience-3cpo" target="_blank">View</a></td>
+                    <td>2025-04-28 23:09:36</td>
+                </tr>
+                <tr class="opportunity" data-source="eventbrite">
+                    <td>We Came. We Coded. We Cleaned the Planet (and Won).</td>
+                    <td class="description"><blockquote>
+<h2>
+  
+  
+  ⚙️ Set the Scene
+</h2>
+</blockquote>
+
+<p>It all started with an open problem, a crew too stubborn to quit, and 24 hours to s...</td>
+                    <td><span class="source-tag source-eventbrite">eventbrite</span></td>
+                    <td><a href="https://dev.to/denyme24/we-came-we-coded-we-cleaned-the-planet-and-won-4ich" target="_blank">View</a></td>
+                    <td>2025-04-28 23:09:36</td>
+                </tr>
+                <tr class="opportunity" data-source="eventbrite">
+                    <td>15 April: Shader Workshop — V Hackathon</td>
+                    <td class="description"><p><a class="article-body-image-wrapper" href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/h...</td>
+                    <td><span class="source-tag source-eventbrite">eventbrite</span></td>
+                    <td><a href="https://dev.to/v_systems/15-april-shader-workshop-v-hackathon-1d01" target="_blank">View</a></td>
+                    <td>2025-04-28 23:09:36</td>
+                </tr>
+                <tr class="opportunity" data-source="eventbrite">
+                    <td>How I Built a Gen AI Hackathon Project to Empower Elderly Care – Solo & on a Deadline</td>
+                    <td class="description"><p>Hey Devs!<br />
+I recently participated in the "Hack the Future: A GenAI Sprint" Hackathon and built a solo project called GuardianAI — a lightweig...</td>
+                    <td><span class="source-tag source-eventbrite">eventbrite</span></td>
+                    <td><a href="https://dev.to/s_j_9c4bdb31f6630da7/how-i-built-a-gen-ai-hackathon-project-to-empower-elderly-care-solo-on-a-deadline-18dc" target="_blank">View</a></td>
+                    <td>2025-04-28 23:09:36</td>
+                </tr>
+                <tr class="opportunity" data-source="eventbrite">
+                    <td>Turning Real Problems into Ideas For A Tech Startup: A Developer's Perspective</td>
+                    <td class="description"><p>Most great startups didn’t start with a big pitch deck — they started with someone annoyed enough to fix something.</p>
+
+<p><a class="article-body-...</td>
+                    <td><span class="source-tag source-eventbrite">eventbrite</span></td>
+                    <td><a href="https://dev.to/olivia_innovation/turning-real-problems-into-ideas-for-a-tech-startup-a-developers-perspective-5gba" target="_blank">View</a></td>
+                    <td>2025-04-28 23:09:36</td>
+                </tr>
+                <tr class="opportunity" data-source="eventbrite">
+                    <td>Hackathon Doubts</td>
+                    <td class="description"><p>Hello everyone this is my first post on this platform <br />
+I wish to get some cool hackathon ideas in AIML field.</p></td>
+                    <td><span class="source-tag source-eventbrite">eventbrite</span></td>
+                    <td><a href="https://dev.to/thekrishdshah/hackathon-doubts-27m7" target="_blank">View</a></td>
+                    <td>2025-04-28 23:09:36</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <p class="refresh-note">Last updated: 2025-04-29 18:39:48</p>
+    </div>
+
+    <script>
+        // Filter functionality
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                // Update active button
+                document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                const filter = button.getAttribute('data-filter');
+                
+                // Show/hide rows based on filter
+                document.querySelectorAll('.opportunity').forEach(row => {
+                    if (filter === 'all' || row.getAttribute('data-source') === filter) {
+                        row.style.display = '';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

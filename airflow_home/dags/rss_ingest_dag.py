@@ -13,7 +13,7 @@ import os
 import logging
 
 # Add the project root to the Python path
-sys.path.insert(0, os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
+sys.path.insert(0, os.path.abspath(os.path.dirname(os.path.dirname(os.path.dirname(__file__)))))
 
 from src.ingest.eventbrite import fetch_eventbrite
 from src.load.to_postgres import upsert_opportunities

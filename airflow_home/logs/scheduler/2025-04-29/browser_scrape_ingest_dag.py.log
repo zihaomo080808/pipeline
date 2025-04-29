@@ -62,3 +62,17 @@ ModuleNotFoundError: No module named 'src'
 [2025-04-29T17:47:59.171-0400] {logging_mixin.py:137} INFO - [2025-04-29T17:47:59.171-0400] {dag.py:2690} INFO - Sync 1 DAGs
 [2025-04-29T17:47:59.177-0400] {logging_mixin.py:137} INFO - [2025-04-29T17:47:59.177-0400] {dag.py:3437} INFO - Setting next_dagrun for browser_scrape_ingest_pipeline to 2025-04-28T00:00:00+00:00, run_after=2025-04-29T00:00:00+00:00
 [2025-04-29T17:47:59.203-0400] {processor.py:175} INFO - Processing /Users/zihaomo/pipeline/airflow_home/dags/browser_scrape_ingest_dag.py took 1.216 seconds
+[2025-04-29T18:24:46.382-0400] {processor.py:153} INFO - Started process (PID=40713) to work on /Users/zihaomo/pipeline/airflow_home/dags/browser_scrape_ingest_dag.py
+[2025-04-29T18:24:46.398-0400] {processor.py:743} INFO - Processing file /Users/zihaomo/pipeline/airflow_home/dags/browser_scrape_ingest_dag.py for tasks to queue
+[2025-04-29T18:24:46.399-0400] {logging_mixin.py:137} INFO - [2025-04-29T18:24:46.399-0400] {dagbag.py:538} INFO - Filling up the DagBag from /Users/zihaomo/pipeline/airflow_home/dags/browser_scrape_ingest_dag.py
+[2025-04-29T18:24:46.416-0400] {logging_mixin.py:137} INFO - [2025-04-29T18:24:46.415-0400] {dagbag.py:343} ERROR - Failed to import: /Users/zihaomo/pipeline/airflow_home/dags/browser_scrape_ingest_dag.py
+Traceback (most recent call last):
+  File "/Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/zihaomo/pipeline/airflow_home/dags/browser_scrape_ingest_dag.py", line 9, in <module>
+    from src.ingest.browseruse_scraper import ingest_browseruse
+ModuleNotFoundError: No module named 'src'
+[2025-04-29T18:24:46.416-0400] {processor.py:755} WARNING - No viable dags retrieved from /Users/zihaomo/pipeline/airflow_home/dags/browser_scrape_ingest_dag.py
+[2025-04-29T18:24:46.765-0400] {processor.py:175} INFO - Processing /Users/zihaomo/pipeline/airflow_home/dags/browser_scrape_ingest_dag.py took 0.383 seconds

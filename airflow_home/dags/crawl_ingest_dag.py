@@ -18,7 +18,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Add the project root to the Python path
-sys.path.insert(0, os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
+sys.path.insert(0, os.path.abspath(os.path.dirname(os.path.dirname(os.path.dirname(__file__)))))
 
 # Import required modules
 from src.ingest.firecrawl_scraper import ingest_firecrawl

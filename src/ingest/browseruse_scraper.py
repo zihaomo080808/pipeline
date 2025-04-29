@@ -1,3 +1,5 @@
+# src/ingest/browseruse_scraper.py
+
 import os
 import json
 import asyncio
@@ -9,13 +11,23 @@ from browser_use import Agent
 from src.db import SessionLocal
 from src.models import RawOpportunity
 
-# 1. Load your .env for OPENAI_API_KEY, etc.
+# 1) Load environment variables from .env
 load_dotenv()
 
-# 2. Initialize your LLM
-llm = ChatOpenAI(model="gpt-4o")
+# 2) Grab your Browser-Use API key
+BROWSER_API_KEY = os.getenv("BROWSER_API_KEY")
+if not BROWSER_API_KEY:
+    raise RuntimeError("Missing BROWSER_API_KEY in environment — please set it in your .env")
 
-# 3. Define exactly which domains you want to hit
+# 3) (Optional) grab your OpenAI API key too, if not already set globally
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+if not OPENAI_API_KEY:
+    raise RuntimeError("Missing OPENAI_API_KEY in environment")
+
+# 4) Initialize your LLM
+llm = ChatOpenAI(model="gpt-4o", openai_api_key=OPENAI_API_KEY)
+
+# 5) List of sites to scrape
 TARGET_SITES = [
     # Events & conferences
     "https://www.eventbrite.com",
@@ -70,13 +82,16 @@ async def _crawl_with_agent():
         "Only return valid JSON—no extra commentary."
     )
 
+    # 6) Instantiate Agent with your API key
+    # browser-use 0.1.40 expects different parameters
     agent = Agent(
+        browser_api_key=BROWSER_API_KEY,
         task=task_prompt,
         llm=llm,
         browser_kwargs={"headless": True}
     )
+
     raw_output = await agent.run()
-    # Agent.run() returns a string; parse it:
     return json.loads(raw_output)
 
 def ingest_browseruse():

@@ -691,3 +691,36 @@ File Path                                                               PID    R
 /Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py                              0           0
 ================================================================================
 [2025-04-29T17:52:53.922-0400] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2025-04-29T18:24:45.377-0400] {manager.py:483} INFO - Processing files using up to 1 processes at a time 
+[2025-04-29T18:24:45.377-0400] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2025-04-29T18:24:45.378-0400] {manager.py:485} INFO - Checking for new files in /Users/zihaomo/pipeline/airflow_home/dags every 300 seconds
+[2025-04-29T18:24:45.378-0400] {manager.py:726} INFO - Searching for files in /Users/zihaomo/pipeline/airflow_home/dags
+[2025-04-29T18:24:45.383-0400] {manager.py:729} INFO - There are 4 files in /Users/zihaomo/pipeline/airflow_home/dags
+[2025-04-29T18:24:46.896-0400] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py                                      0           0
+/Users/zihaomo/pipeline/airflow_home/dags/browser_scrape_ingest_dag.py                           0           1  1.13s           2025-04-29T22:24:46
+/Users/zihaomo/pipeline/airflow_home/dags/crawl_ingest_dag.py                                    0           0
+/Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py                              0           0
+================================================================================
+[2025-04-29T18:31:53.077-0400] {manager.py:483} INFO - Processing files using up to 1 processes at a time 
+[2025-04-29T18:31:53.078-0400] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2025-04-29T18:31:53.078-0400] {manager.py:485} INFO - Checking for new files in /Users/zihaomo/pipeline/airflow_home/dags every 300 seconds
+[2025-04-29T18:31:53.078-0400] {manager.py:726} INFO - Searching for files in /Users/zihaomo/pipeline/airflow_home/dags
+[2025-04-29T18:31:53.080-0400] {manager.py:729} INFO - There are 4 files in /Users/zihaomo/pipeline/airflow_home/dags
+[2025-04-29T18:31:54.706-0400] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                               PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py                                      0           0
+/Users/zihaomo/pipeline/airflow_home/dags/browser_scrape_ingest_dag.py                           0           0
+/Users/zihaomo/pipeline/airflow_home/dags/opportunity_ingest_dag.py                              0           0
+/Users/zihaomo/pipeline/airflow_home/dags/crawl_ingest_dag.py                                    1           0  1.26s           2025-04-29T22:31:54
+================================================================================
+[2025-04-29T18:34:08.891-0400] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15

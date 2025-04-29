@@ -1,0 +1,21 @@
+[2025-04-29T18:34:14.316-0400] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: opportunity_pipeline.ingest_eventbrite scheduled__2025-04-29T21:00:00+00:00 [queued]>
+[2025-04-29T18:34:14.320-0400] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: opportunity_pipeline.ingest_eventbrite scheduled__2025-04-29T21:00:00+00:00 [queued]>
+[2025-04-29T18:34:14.320-0400] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2025-04-29T18:34:14.320-0400] {taskinstance.py:1280} INFO - Starting attempt 1 of 2
+[2025-04-29T18:34:14.320-0400] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2025-04-29T18:34:14.325-0400] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): ingest_eventbrite> on 2025-04-29 21:00:00+00:00
+[2025-04-29T18:34:14.328-0400] {standard_task_runner.py:55} INFO - Started process 42339 to run task
+[2025-04-29T18:34:14.332-0400] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'opportunity_pipeline', 'ingest_eventbrite', 'scheduled__2025-04-29T21:00:00+00:00', '--job-id', '16', '--raw', '--subdir', 'DAGS_FOLDER/opportunity_ingest_dag.py', '--cfg-path', '/var/folders/bc/zt35hlqn755d7y9zj64rxxph0000gn/T/tmp60proih_']
+[2025-04-29T18:34:14.334-0400] {standard_task_runner.py:83} INFO - Job 16: Subtask ingest_eventbrite
+[2025-04-29T18:34:14.394-0400] {task_command.py:388} INFO - Running <TaskInstance: opportunity_pipeline.ingest_eventbrite scheduled__2025-04-29T21:00:00+00:00 [running]> on host zihaos-macbook-pro.local
+[2025-04-29T18:34:14.421-0400] {taskinstance.py:1507} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=you
+AIRFLOW_CTX_DAG_ID=opportunity_pipeline
+AIRFLOW_CTX_TASK_ID=ingest_eventbrite
+AIRFLOW_CTX_EXECUTION_DATE=2025-04-29T21:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2025-04-29T21:00:00+00:00
+[2025-04-29T18:34:16.018-0400] {process_utils.py:129} INFO - Sending 15 to group 42339. PIDs of all processes in the group: [42339]
+[2025-04-29T18:34:16.018-0400] {process_utils.py:84} INFO - Sending the signal 15 to group 42339
