@@ -1,0 +1,15 @@
+[2025-04-28T18:20:01.888-0400] {processor.py:153} INFO - Started process (PID=96823) to work on /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py
+[2025-04-28T18:20:01.906-0400] {processor.py:743} INFO - Processing file /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2025-04-28T18:20:01.906-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:20:01.906-0400] {dagbag.py:538} INFO - Filling up the DagBag from /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py
+[2025-04-28T18:20:01.911-0400] {processor.py:755} WARNING - No viable dags retrieved from /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py
+[2025-04-28T18:20:02.409-0400] {processor.py:175} INFO - Processing /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py took 0.521 seconds
+[2025-04-28T18:21:31.175-0400] {processor.py:153} INFO - Started process (PID=97055) to work on /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py
+[2025-04-28T18:21:31.188-0400] {processor.py:743} INFO - Processing file /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2025-04-28T18:21:31.188-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:21:31.188-0400] {dagbag.py:538} INFO - Filling up the DagBag from /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py
+[2025-04-28T18:21:31.194-0400] {processor.py:755} WARNING - No viable dags retrieved from /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py
+[2025-04-28T18:21:31.667-0400] {processor.py:175} INFO - Processing /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py took 0.493 seconds
+[2025-04-28T18:22:26.693-0400] {processor.py:153} INFO - Started process (PID=97281) to work on /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py
+[2025-04-28T18:22:26.711-0400] {processor.py:743} INFO - Processing file /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2025-04-28T18:22:26.711-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:22:26.711-0400] {dagbag.py:538} INFO - Filling up the DagBag from /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py
+[2025-04-28T18:22:26.721-0400] {processor.py:755} WARNING - No viable dags retrieved from /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py
+[2025-04-28T18:22:27.159-0400] {processor.py:175} INFO - Processing /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/plugins/workday.py took 0.466 seconds

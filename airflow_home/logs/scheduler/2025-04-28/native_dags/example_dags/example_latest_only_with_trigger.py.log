@@ -1,0 +1,18 @@
+[2025-04-28T18:20:52.739-0400] {processor.py:153} INFO - Started process (PID=96965) to work on /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2025-04-28T18:20:52.753-0400] {processor.py:743} INFO - Processing file /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py for tasks to queue
+[2025-04-28T18:20:52.753-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:20:52.753-0400] {dagbag.py:538} INFO - Filling up the DagBag from /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2025-04-28T18:20:52.773-0400] {processor.py:753} INFO - DAG(s) dict_keys(['latest_only_with_trigger']) retrieved from /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2025-04-28T18:20:53.421-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:20:53.421-0400] {manager.py:504} INFO - Created Permission View: can delete on DAG:latest_only_with_trigger
+[2025-04-28T18:20:53.425-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:20:53.425-0400] {manager.py:504} INFO - Created Permission View: can read on DAG:latest_only_with_trigger
+[2025-04-28T18:20:53.429-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:20:53.429-0400] {manager.py:504} INFO - Created Permission View: can edit on DAG:latest_only_with_trigger
+[2025-04-28T18:20:53.429-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:20:53.429-0400] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-04-28T18:20:53.435-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:20:53.435-0400] {dag.py:2711} INFO - Creating ORM DAG for latest_only_with_trigger
+[2025-04-28T18:20:53.438-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:20:53.438-0400] {dag.py:3437} INFO - Setting next_dagrun for latest_only_with_trigger to 2025-04-28T18:20:53.438378+00:00, run_after=2025-04-28T22:20:53.438378+00:00
+[2025-04-28T18:20:53.446-0400] {processor.py:175} INFO - Processing /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py took 0.707 seconds
+[2025-04-28T18:22:19.069-0400] {processor.py:153} INFO - Started process (PID=97196) to work on /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2025-04-28T18:22:19.083-0400] {processor.py:743} INFO - Processing file /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py for tasks to queue
+[2025-04-28T18:22:19.083-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:22:19.083-0400] {dagbag.py:538} INFO - Filling up the DagBag from /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2025-04-28T18:22:19.097-0400] {processor.py:753} INFO - DAG(s) dict_keys(['latest_only_with_trigger']) retrieved from /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2025-04-28T18:22:19.634-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:22:19.634-0400] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-04-28T18:22:19.641-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:22:19.641-0400] {dag.py:3437} INFO - Setting next_dagrun for latest_only_with_trigger to 2025-04-28T18:22:19.640972+00:00, run_after=2025-04-28T22:22:19.640972+00:00
+[2025-04-28T18:22:19.659-0400] {processor.py:175} INFO - Processing /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/example_latest_only_with_trigger.py took 0.591 seconds

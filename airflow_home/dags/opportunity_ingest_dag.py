@@ -1,6 +1,11 @@
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime, timedelta
+import sys
+import os
+
+# Add the parent directory to sys.path
+sys.path.insert(0, os.path.abspath(os.path.dirname(os.path.dirname(os.path.dirname(__file__)))))
 
 from src.ingest.eventbrite import fetch_eventbrite
 from src.ingest.airtable    import fetch_airtable

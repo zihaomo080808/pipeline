@@ -1,0 +1,25 @@
+[2025-04-28T18:20:05.763-0400] {processor.py:153} INFO - Started process (PID=96834) to work on /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2025-04-28T18:20:05.775-0400] {processor.py:743} INFO - Processing file /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py for tasks to queue
+[2025-04-28T18:20:05.775-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:20:05.775-0400] {dagbag.py:538} INFO - Filling up the DagBag from /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2025-04-28T18:20:05.801-0400] {processor.py:753} INFO - DAG(s) dict_keys(['tutorial_taskflow_api']) retrieved from /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2025-04-28T18:20:06.312-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:20:06.311-0400] {manager.py:504} INFO - Created Permission View: can delete on DAG:tutorial_taskflow_api
+[2025-04-28T18:20:06.315-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:20:06.314-0400] {manager.py:504} INFO - Created Permission View: can read on DAG:tutorial_taskflow_api
+[2025-04-28T18:20:06.318-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:20:06.318-0400] {manager.py:504} INFO - Created Permission View: can edit on DAG:tutorial_taskflow_api
+[2025-04-28T18:20:06.318-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:20:06.318-0400] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-04-28T18:20:06.322-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:20:06.322-0400] {dag.py:2711} INFO - Creating ORM DAG for tutorial_taskflow_api
+[2025-04-28T18:20:06.324-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:20:06.324-0400] {dag.py:3437} INFO - Setting next_dagrun for tutorial_taskflow_api to None, run_after=None
+[2025-04-28T18:20:06.331-0400] {processor.py:175} INFO - Processing /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py took 0.569 seconds
+[2025-04-28T18:21:35.458-0400] {processor.py:153} INFO - Started process (PID=97066) to work on /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2025-04-28T18:21:35.474-0400] {processor.py:743} INFO - Processing file /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py for tasks to queue
+[2025-04-28T18:21:35.474-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:21:35.474-0400] {dagbag.py:538} INFO - Filling up the DagBag from /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2025-04-28T18:21:35.504-0400] {processor.py:753} INFO - DAG(s) dict_keys(['tutorial_taskflow_api']) retrieved from /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2025-04-28T18:21:36.063-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:21:36.063-0400] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-04-28T18:21:36.069-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:21:36.069-0400] {dag.py:3437} INFO - Setting next_dagrun for tutorial_taskflow_api to None, run_after=None
+[2025-04-28T18:21:36.078-0400] {processor.py:175} INFO - Processing /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py took 0.621 seconds
+[2025-04-28T18:22:30.898-0400] {processor.py:153} INFO - Started process (PID=97292) to work on /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2025-04-28T18:22:30.913-0400] {processor.py:743} INFO - Processing file /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py for tasks to queue
+[2025-04-28T18:22:30.913-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:22:30.913-0400] {dagbag.py:538} INFO - Filling up the DagBag from /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2025-04-28T18:22:30.938-0400] {processor.py:753} INFO - DAG(s) dict_keys(['tutorial_taskflow_api']) retrieved from /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2025-04-28T18:22:31.372-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:22:31.372-0400] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-04-28T18:22:31.378-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:22:31.378-0400] {dag.py:3437} INFO - Setting next_dagrun for tutorial_taskflow_api to None, run_after=None
+[2025-04-28T18:22:31.386-0400] {processor.py:175} INFO - Processing /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_taskflow_api.py took 0.488 seconds

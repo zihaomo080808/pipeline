@@ -1,0 +1,18 @@
+[2025-04-28T18:20:32.611-0400] {processor.py:153} INFO - Started process (PID=96889) to work on /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-04-28T18:20:32.625-0400] {processor.py:743} INFO - Processing file /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2025-04-28T18:20:32.626-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:20:32.625-0400] {dagbag.py:538} INFO - Filling up the DagBag from /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-04-28T18:20:32.637-0400] {processor.py:753} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-04-28T18:20:33.245-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:20:33.244-0400] {manager.py:504} INFO - Created Permission View: can delete on DAG:example_skip_dag
+[2025-04-28T18:20:33.252-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:20:33.252-0400] {manager.py:504} INFO - Created Permission View: can read on DAG:example_skip_dag
+[2025-04-28T18:20:33.258-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:20:33.258-0400] {manager.py:504} INFO - Created Permission View: can edit on DAG:example_skip_dag
+[2025-04-28T18:20:33.258-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:20:33.258-0400] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-04-28T18:20:33.268-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:20:33.268-0400] {dag.py:2711} INFO - Creating ORM DAG for example_skip_dag
+[2025-04-28T18:20:33.271-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:20:33.271-0400] {dag.py:3437} INFO - Setting next_dagrun for example_skip_dag to 2025-04-27T22:20:33.271504+00:00, run_after=2025-04-28T22:20:33.271504+00:00
+[2025-04-28T18:20:33.292-0400] {processor.py:175} INFO - Processing /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/example_skip_dag.py took 0.681 seconds
+[2025-04-28T18:22:00.714-0400] {processor.py:153} INFO - Started process (PID=97120) to work on /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-04-28T18:22:00.727-0400] {processor.py:743} INFO - Processing file /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2025-04-28T18:22:00.727-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:22:00.727-0400] {dagbag.py:538} INFO - Filling up the DagBag from /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-04-28T18:22:00.740-0400] {processor.py:753} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-04-28T18:22:01.221-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:22:01.221-0400] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-04-28T18:22:01.227-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:22:01.227-0400] {dag.py:3437} INFO - Setting next_dagrun for example_skip_dag to 2025-04-27T22:22:01.227478+00:00, run_after=2025-04-28T22:22:01.227478+00:00
+[2025-04-28T18:22:01.236-0400] {processor.py:175} INFO - Processing /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/example_skip_dag.py took 0.522 seconds

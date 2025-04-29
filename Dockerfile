@@ -7,14 +7,13 @@ COPY requirements.txt .
 USER airflow
 
 # 3) Install all extras as airflow
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir psycopg2-binary -r requirements.txt
 
 # 4) Back to root to copy the rest of your code
 USER root
 
-# 5) Copy your dags/ and src/ into the image
-COPY dags/ /opt/airflow/dags/
-COPY src/  /opt/airflow/src/
+# 5) Copy your files into the image
+# No need to copy dags or src since we're mounting them as volumes
 
 # 6) Ensure airflow owns everything in /opt/airflow
 RUN chown -R airflow: /opt/airflow

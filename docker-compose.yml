@@ -13,24 +13,26 @@ services:
     restart: always
     depends_on: [db]
     environment:
-      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__CORE__EXECUTOR=SequentialExecutor
       - AIRFLOW__CORE__SQL_ALCHEMY_CONN=${DATABASE_URL}
+      - AIRFLOW__WEBSERVER__BASE_URL=http://localhost:8000
+      - AIRFLOW__CORE__DAGS_FOLDER=/opt/airflow/airflow_home/dags
     ports:
-      - "8080:8080"
+      - "8000:8080"
     volumes:
-      - .:/opt/airflow
+      - ./airflow_home:/opt/airflow/airflow_home
+      - ./src:/opt/airflow/src
     command: >
       bash -c "airflow db upgrade &&
-               airflow users create --username admin --firstname Admin --lastname User \
-                 --role Admin --email admin@example.com --password admin &&
-               airflow webserver"
+              exec airflow webserver"
   scheduler:
     build: .
     restart: always
     depends_on: [webserver]
     environment:
-      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__CORE__EXECUTOR=SequentialExecutor
       - AIRFLOW__CORE__SQL_ALCHEMY_CONN=${DATABASE_URL}
     volumes:
-      - .:/opt/airflow
+      - ./airflow_home:/opt/airflow/airflow_home
+      - ./src:/opt/airflow/src
     command: airflow scheduler

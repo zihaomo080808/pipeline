@@ -1,0 +1,25 @@
+[2025-04-28T18:20:07.977-0400] {processor.py:153} INFO - Started process (PID=96836) to work on /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2025-04-28T18:20:07.989-0400] {processor.py:743} INFO - Processing file /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2025-04-28T18:20:07.990-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:20:07.990-0400] {dagbag.py:538} INFO - Filling up the DagBag from /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2025-04-28T18:20:08.007-0400] {processor.py:753} INFO - DAG(s) dict_keys(['tutorial_dag']) retrieved from /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2025-04-28T18:20:08.487-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:20:08.487-0400] {manager.py:504} INFO - Created Permission View: can edit on DAG:tutorial_dag
+[2025-04-28T18:20:08.491-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:20:08.491-0400] {manager.py:504} INFO - Created Permission View: can read on DAG:tutorial_dag
+[2025-04-28T18:20:08.494-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:20:08.494-0400] {manager.py:504} INFO - Created Permission View: can delete on DAG:tutorial_dag
+[2025-04-28T18:20:08.494-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:20:08.494-0400] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-04-28T18:20:08.498-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:20:08.498-0400] {dag.py:2711} INFO - Creating ORM DAG for tutorial_dag
+[2025-04-28T18:20:08.501-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:20:08.501-0400] {dag.py:3437} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2025-04-28T18:20:08.509-0400] {processor.py:175} INFO - Processing /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py took 0.532 seconds
+[2025-04-28T18:21:37.270-0400] {processor.py:153} INFO - Started process (PID=97067) to work on /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2025-04-28T18:21:37.283-0400] {processor.py:743} INFO - Processing file /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2025-04-28T18:21:37.283-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:21:37.283-0400] {dagbag.py:538} INFO - Filling up the DagBag from /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2025-04-28T18:21:37.311-0400] {processor.py:753} INFO - DAG(s) dict_keys(['tutorial_dag']) retrieved from /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2025-04-28T18:21:37.749-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:21:37.749-0400] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-04-28T18:21:37.755-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:21:37.755-0400] {dag.py:3437} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2025-04-28T18:21:37.765-0400] {processor.py:175} INFO - Processing /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py took 0.495 seconds
+[2025-04-28T18:22:33.019-0400] {processor.py:153} INFO - Started process (PID=97294) to work on /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2025-04-28T18:22:33.034-0400] {processor.py:743} INFO - Processing file /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2025-04-28T18:22:33.035-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:22:33.035-0400] {dagbag.py:538} INFO - Filling up the DagBag from /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2025-04-28T18:22:33.068-0400] {processor.py:753} INFO - DAG(s) dict_keys(['tutorial_dag']) retrieved from /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2025-04-28T18:22:33.614-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:22:33.614-0400] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-04-28T18:22:33.621-0400] {logging_mixin.py:137} INFO - [2025-04-28T18:22:33.621-0400] {dag.py:3437} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2025-04-28T18:22:33.633-0400] {processor.py:175} INFO - Processing /Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py took 0.615 seconds
