@@ -1,0 +1,56 @@
+[2025-04-29T17:46:18.077-0400] {processor.py:153} INFO - Started process (PID=36415) to work on /Users/zihaomo/pipeline/airflow_home/dags/crawl_ingest_dag.py
+[2025-04-29T17:46:18.090-0400] {processor.py:743} INFO - Processing file /Users/zihaomo/pipeline/airflow_home/dags/crawl_ingest_dag.py for tasks to queue
+[2025-04-29T17:46:18.090-0400] {logging_mixin.py:137} INFO - [2025-04-29T17:46:18.090-0400] {dagbag.py:538} INFO - Filling up the DagBag from /Users/zihaomo/pipeline/airflow_home/dags/crawl_ingest_dag.py
+[2025-04-29T17:46:18.108-0400] {logging_mixin.py:137} INFO - [2025-04-29T17:46:18.107-0400] {dagbag.py:343} ERROR - Failed to import: /Users/zihaomo/pipeline/airflow_home/dags/crawl_ingest_dag.py
+Traceback (most recent call last):
+  File "/Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/zihaomo/pipeline/airflow_home/dags/crawl_ingest_dag.py", line 24, in <module>
+    from src.ingest.firecrawl_scraper import ingest_firecrawl
+ModuleNotFoundError: No module named 'src'
+[2025-04-29T17:46:18.108-0400] {processor.py:755} WARNING - No viable dags retrieved from /Users/zihaomo/pipeline/airflow_home/dags/crawl_ingest_dag.py
+[2025-04-29T17:46:18.438-0400] {processor.py:175} INFO - Processing /Users/zihaomo/pipeline/airflow_home/dags/crawl_ingest_dag.py took 0.362 seconds
+[2025-04-29T17:46:49.580-0400] {processor.py:153} INFO - Started process (PID=36474) to work on /Users/zihaomo/pipeline/airflow_home/dags/crawl_ingest_dag.py
+[2025-04-29T17:46:49.598-0400] {processor.py:743} INFO - Processing file /Users/zihaomo/pipeline/airflow_home/dags/crawl_ingest_dag.py for tasks to queue
+[2025-04-29T17:46:49.598-0400] {logging_mixin.py:137} INFO - [2025-04-29T17:46:49.598-0400] {dagbag.py:538} INFO - Filling up the DagBag from /Users/zihaomo/pipeline/airflow_home/dags/crawl_ingest_dag.py
+[2025-04-29T17:46:49.627-0400] {logging_mixin.py:137} INFO - [2025-04-29T17:46:49.627-0400] {dagbag.py:343} ERROR - Failed to import: /Users/zihaomo/pipeline/airflow_home/dags/crawl_ingest_dag.py
+Traceback (most recent call last):
+  File "/Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/zihaomo/pipeline/airflow_home/dags/crawl_ingest_dag.py", line 24, in <module>
+    from src.ingest.firecrawl_scraper import ingest_firecrawl
+ModuleNotFoundError: No module named 'src'
+[2025-04-29T17:46:49.627-0400] {processor.py:755} WARNING - No viable dags retrieved from /Users/zihaomo/pipeline/airflow_home/dags/crawl_ingest_dag.py
+[2025-04-29T17:46:49.960-0400] {processor.py:175} INFO - Processing /Users/zihaomo/pipeline/airflow_home/dags/crawl_ingest_dag.py took 0.381 seconds
+[2025-04-29T17:47:20.828-0400] {processor.py:153} INFO - Started process (PID=36540) to work on /Users/zihaomo/pipeline/airflow_home/dags/crawl_ingest_dag.py
+[2025-04-29T17:47:20.839-0400] {processor.py:743} INFO - Processing file /Users/zihaomo/pipeline/airflow_home/dags/crawl_ingest_dag.py for tasks to queue
+[2025-04-29T17:47:20.839-0400] {logging_mixin.py:137} INFO - [2025-04-29T17:47:20.839-0400] {dagbag.py:538} INFO - Filling up the DagBag from /Users/zihaomo/pipeline/airflow_home/dags/crawl_ingest_dag.py
+[2025-04-29T17:47:20.860-0400] {logging_mixin.py:137} INFO - [2025-04-29T17:47:20.860-0400] {dagbag.py:343} ERROR - Failed to import: /Users/zihaomo/pipeline/airflow_home/dags/crawl_ingest_dag.py
+Traceback (most recent call last):
+  File "/Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/zihaomo/pipeline/airflow_home/dags/crawl_ingest_dag.py", line 24, in <module>
+    from src.ingest.firecrawl_scraper import ingest_firecrawl
+ModuleNotFoundError: No module named 'src'
+[2025-04-29T17:47:20.861-0400] {processor.py:755} WARNING - No viable dags retrieved from /Users/zihaomo/pipeline/airflow_home/dags/crawl_ingest_dag.py
+[2025-04-29T17:47:21.207-0400] {processor.py:175} INFO - Processing /Users/zihaomo/pipeline/airflow_home/dags/crawl_ingest_dag.py took 0.379 seconds
+[2025-04-29T17:47:53.059-0400] {processor.py:153} INFO - Started process (PID=36607) to work on /Users/zihaomo/pipeline/airflow_home/dags/crawl_ingest_dag.py
+[2025-04-29T17:47:53.074-0400] {processor.py:743} INFO - Processing file /Users/zihaomo/pipeline/airflow_home/dags/crawl_ingest_dag.py for tasks to queue
+[2025-04-29T17:47:53.074-0400] {logging_mixin.py:137} INFO - [2025-04-29T17:47:53.074-0400] {dagbag.py:538} INFO - Filling up the DagBag from /Users/zihaomo/pipeline/airflow_home/dags/crawl_ingest_dag.py
+[2025-04-29T17:47:53.092-0400] {logging_mixin.py:137} INFO - [2025-04-29T17:47:53.092-0400] {dagbag.py:343} ERROR - Failed to import: /Users/zihaomo/pipeline/airflow_home/dags/crawl_ingest_dag.py
+Traceback (most recent call last):
+  File "/Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/zihaomo/pipeline/airflow_home/dags/crawl_ingest_dag.py", line 24, in <module>
+    from src.ingest.firecrawl_scraper import ingest_firecrawl
+ModuleNotFoundError: No module named 'src'
+[2025-04-29T17:47:53.092-0400] {processor.py:755} WARNING - No viable dags retrieved from /Users/zihaomo/pipeline/airflow_home/dags/crawl_ingest_dag.py
+[2025-04-29T17:47:53.412-0400] {processor.py:175} INFO - Processing /Users/zihaomo/pipeline/airflow_home/dags/crawl_ingest_dag.py took 0.353 seconds

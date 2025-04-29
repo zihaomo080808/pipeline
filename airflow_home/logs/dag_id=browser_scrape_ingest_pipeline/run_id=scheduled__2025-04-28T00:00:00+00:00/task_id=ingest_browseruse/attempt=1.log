@@ -1,0 +1,50 @@
+[2025-04-29T17:50:06.706-0400] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: browser_scrape_ingest_pipeline.ingest_browseruse scheduled__2025-04-28T00:00:00+00:00 [queued]>
+[2025-04-29T17:50:06.710-0400] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: browser_scrape_ingest_pipeline.ingest_browseruse scheduled__2025-04-28T00:00:00+00:00 [queued]>
+[2025-04-29T17:50:06.710-0400] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2025-04-29T17:50:06.710-0400] {taskinstance.py:1280} INFO - Starting attempt 1 of 3
+[2025-04-29T17:50:06.710-0400] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2025-04-29T17:50:06.724-0400] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): ingest_browseruse> on 2025-04-28 00:00:00+00:00
+[2025-04-29T17:50:06.728-0400] {standard_task_runner.py:55} INFO - Started process 37269 to run task
+[2025-04-29T17:50:06.731-0400] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'browser_scrape_ingest_pipeline', 'ingest_browseruse', 'scheduled__2025-04-28T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/browser_scrape_ingest_dag.py', '--cfg-path', '/var/folders/bc/zt35hlqn755d7y9zj64rxxph0000gn/T/tmpkkd3sjjm']
+[2025-04-29T17:50:06.734-0400] {standard_task_runner.py:83} INFO - Job 3: Subtask ingest_browseruse
+[2025-04-29T17:50:06.779-0400] {task_command.py:388} INFO - Running <TaskInstance: browser_scrape_ingest_pipeline.ingest_browseruse scheduled__2025-04-28T00:00:00+00:00 [running]> on host zihaos-macbook-pro.local
+[2025-04-29T17:50:06.803-0400] {taskinstance.py:1507} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=you
+AIRFLOW_CTX_DAG_ID=browser_scrape_ingest_pipeline
+AIRFLOW_CTX_TASK_ID=ingest_browseruse
+AIRFLOW_CTX_EXECUTION_DATE=2025-04-28T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2025-04-28T00:00:00+00:00
+[2025-04-29T17:50:06.805-0400] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zihaomo/pipeline/src/ingest/browseruse_scraper.py", line 86, in ingest_browseruse
+    listings = asyncio.run(_crawl_with_agent())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 650, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/zihaomo/pipeline/src/ingest/browseruse_scraper.py", line 73, in _crawl_with_agent
+    agent = Agent(
+            ^^^^^^
+  File "/Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/browser_use/utils.py", line 19, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+TypeError: Agent.__init__() got an unexpected keyword argument 'browser_kwargs'
+[2025-04-29T17:50:06.823-0400] {taskinstance.py:1318} INFO - Marking task as UP_FOR_RETRY. dag_id=browser_scrape_ingest_pipeline, task_id=ingest_browseruse, execution_date=20250428T000000, start_date=20250429T215006, end_date=20250429T215006
+[2025-04-29T17:50:06.827-0400] {standard_task_runner.py:100} ERROR - Failed to execute job 3 for task ingest_browseruse (Agent.__init__() got an unexpected keyword argument 'browser_kwargs'; 37269)
+[2025-04-29T17:50:06.835-0400] {local_task_job.py:208} INFO - Task exited with return code 1
+[2025-04-29T17:50:06.846-0400] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

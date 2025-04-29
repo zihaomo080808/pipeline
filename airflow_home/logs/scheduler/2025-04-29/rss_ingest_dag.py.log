@@ -1,0 +1,109 @@
+[2025-04-29T17:38:47.134-0400] {processor.py:153} INFO - Started process (PID=34670) to work on /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py
+[2025-04-29T17:38:47.148-0400] {processor.py:743} INFO - Processing file /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py for tasks to queue
+[2025-04-29T17:38:47.148-0400] {logging_mixin.py:137} INFO - [2025-04-29T17:38:47.148-0400] {dagbag.py:538} INFO - Filling up the DagBag from /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py
+[2025-04-29T17:38:47.346-0400] {processor.py:753} INFO - DAG(s) dict_keys(['rss_ingest_pipeline']) retrieved from /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py
+[2025-04-29T17:38:47.835-0400] {logging_mixin.py:137} INFO - [2025-04-29T17:38:47.835-0400] {manager.py:504} INFO - Created Permission View: can edit on DAG:rss_ingest_pipeline
+[2025-04-29T17:38:47.838-0400] {logging_mixin.py:137} INFO - [2025-04-29T17:38:47.838-0400] {manager.py:504} INFO - Created Permission View: can read on DAG:rss_ingest_pipeline
+[2025-04-29T17:38:47.841-0400] {logging_mixin.py:137} INFO - [2025-04-29T17:38:47.841-0400] {manager.py:504} INFO - Created Permission View: can delete on DAG:rss_ingest_pipeline
+[2025-04-29T17:38:47.841-0400] {logging_mixin.py:137} INFO - [2025-04-29T17:38:47.841-0400] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-04-29T17:38:47.846-0400] {logging_mixin.py:137} INFO - [2025-04-29T17:38:47.845-0400] {dag.py:2711} INFO - Creating ORM DAG for rss_ingest_pipeline
+[2025-04-29T17:38:47.848-0400] {logging_mixin.py:137} INFO - [2025-04-29T17:38:47.848-0400] {dag.py:3437} INFO - Setting next_dagrun for rss_ingest_pipeline to 2025-04-01T00:00:00+00:00, run_after=2025-04-01T01:00:00+00:00
+[2025-04-29T17:38:47.857-0400] {processor.py:175} INFO - Processing /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py took 0.724 seconds
+[2025-04-29T17:43:20.894-0400] {processor.py:153} INFO - Started process (PID=35709) to work on /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py
+[2025-04-29T17:43:20.904-0400] {processor.py:743} INFO - Processing file /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py for tasks to queue
+[2025-04-29T17:43:20.905-0400] {logging_mixin.py:137} INFO - [2025-04-29T17:43:20.904-0400] {dagbag.py:538} INFO - Filling up the DagBag from /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py
+[2025-04-29T17:43:20.936-0400] {logging_mixin.py:137} INFO - [2025-04-29T17:43:20.928-0400] {dagbag.py:343} ERROR - Failed to import: /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py
+Traceback (most recent call last):
+  File "/Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py", line 18, in <module>
+    from src.ingest.eventbrite import fetch_eventbrite
+ModuleNotFoundError: No module named 'src'
+[2025-04-29T17:43:20.936-0400] {processor.py:755} WARNING - No viable dags retrieved from /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py
+[2025-04-29T17:43:21.511-0400] {processor.py:175} INFO - Processing /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py took 0.618 seconds
+[2025-04-29T17:46:16.073-0400] {processor.py:153} INFO - Started process (PID=36412) to work on /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py
+[2025-04-29T17:46:16.092-0400] {processor.py:743} INFO - Processing file /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py for tasks to queue
+[2025-04-29T17:46:16.093-0400] {logging_mixin.py:137} INFO - [2025-04-29T17:46:16.093-0400] {dagbag.py:538} INFO - Filling up the DagBag from /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py
+[2025-04-29T17:46:16.114-0400] {logging_mixin.py:137} INFO - [2025-04-29T17:46:16.110-0400] {dagbag.py:343} ERROR - Failed to import: /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py
+Traceback (most recent call last):
+  File "/Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py", line 18, in <module>
+    from src.ingest.eventbrite import fetch_eventbrite
+ModuleNotFoundError: No module named 'src'
+[2025-04-29T17:46:16.115-0400] {processor.py:755} WARNING - No viable dags retrieved from /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py
+[2025-04-29T17:46:16.423-0400] {processor.py:175} INFO - Processing /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py took 0.350 seconds
+[2025-04-29T17:46:47.350-0400] {processor.py:153} INFO - Started process (PID=36472) to work on /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py
+[2025-04-29T17:46:47.368-0400] {processor.py:743} INFO - Processing file /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py for tasks to queue
+[2025-04-29T17:46:47.368-0400] {logging_mixin.py:137} INFO - [2025-04-29T17:46:47.368-0400] {dagbag.py:538} INFO - Filling up the DagBag from /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py
+[2025-04-29T17:46:47.410-0400] {logging_mixin.py:137} INFO - [2025-04-29T17:46:47.409-0400] {dagbag.py:343} ERROR - Failed to import: /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py
+Traceback (most recent call last):
+  File "/Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py", line 18, in <module>
+    from src.ingest.eventbrite import fetch_eventbrite
+ModuleNotFoundError: No module named 'src'
+[2025-04-29T17:46:47.410-0400] {processor.py:755} WARNING - No viable dags retrieved from /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py
+[2025-04-29T17:46:47.873-0400] {processor.py:175} INFO - Processing /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py took 0.524 seconds
+[2025-04-29T17:47:19.173-0400] {processor.py:153} INFO - Started process (PID=36532) to work on /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py
+[2025-04-29T17:47:19.179-0400] {processor.py:743} INFO - Processing file /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py for tasks to queue
+[2025-04-29T17:47:19.180-0400] {logging_mixin.py:137} INFO - [2025-04-29T17:47:19.180-0400] {dagbag.py:538} INFO - Filling up the DagBag from /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py
+[2025-04-29T17:47:19.226-0400] {logging_mixin.py:137} INFO - [2025-04-29T17:47:19.224-0400] {dagbag.py:343} ERROR - Failed to import: /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py
+Traceback (most recent call last):
+  File "/Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py", line 18, in <module>
+    from src.ingest.eventbrite import fetch_eventbrite
+ModuleNotFoundError: No module named 'src'
+[2025-04-29T17:47:19.226-0400] {processor.py:755} WARNING - No viable dags retrieved from /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py
+[2025-04-29T17:47:19.699-0400] {processor.py:175} INFO - Processing /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py took 0.527 seconds
+[2025-04-29T17:47:51.267-0400] {processor.py:153} INFO - Started process (PID=36604) to work on /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py
+[2025-04-29T17:47:51.285-0400] {processor.py:743} INFO - Processing file /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py for tasks to queue
+[2025-04-29T17:47:51.285-0400] {logging_mixin.py:137} INFO - [2025-04-29T17:47:51.285-0400] {dagbag.py:538} INFO - Filling up the DagBag from /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py
+[2025-04-29T17:47:51.304-0400] {logging_mixin.py:137} INFO - [2025-04-29T17:47:51.303-0400] {dagbag.py:343} ERROR - Failed to import: /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py
+Traceback (most recent call last):
+  File "/Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py", line 18, in <module>
+    from src.ingest.eventbrite import fetch_eventbrite
+ModuleNotFoundError: No module named 'src'
+[2025-04-29T17:47:51.304-0400] {processor.py:755} WARNING - No viable dags retrieved from /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py
+[2025-04-29T17:47:51.769-0400] {processor.py:175} INFO - Processing /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py took 0.503 seconds
+[2025-04-29T17:50:04.328-0400] {processor.py:153} INFO - Started process (PID=37258) to work on /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py
+[2025-04-29T17:50:04.344-0400] {processor.py:743} INFO - Processing file /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py for tasks to queue
+[2025-04-29T17:50:04.344-0400] {logging_mixin.py:137} INFO - [2025-04-29T17:50:04.344-0400] {dagbag.py:538} INFO - Filling up the DagBag from /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py
+[2025-04-29T17:50:04.360-0400] {logging_mixin.py:137} INFO - [2025-04-29T17:50:04.359-0400] {dagbag.py:343} ERROR - Failed to import: /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py
+Traceback (most recent call last):
+  File "/Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py", line 18, in <module>
+    from src.ingest.eventbrite import fetch_eventbrite
+ModuleNotFoundError: No module named 'src'
+[2025-04-29T17:50:04.360-0400] {processor.py:755} WARNING - No viable dags retrieved from /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py
+[2025-04-29T17:50:04.675-0400] {processor.py:175} INFO - Processing /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py took 0.347 seconds
+[2025-04-29T17:52:35.285-0400] {processor.py:153} INFO - Started process (PID=37650) to work on /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py
+[2025-04-29T17:52:35.299-0400] {processor.py:743} INFO - Processing file /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py for tasks to queue
+[2025-04-29T17:52:35.300-0400] {logging_mixin.py:137} INFO - [2025-04-29T17:52:35.300-0400] {dagbag.py:538} INFO - Filling up the DagBag from /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py
+[2025-04-29T17:52:35.317-0400] {logging_mixin.py:137} INFO - [2025-04-29T17:52:35.316-0400] {dagbag.py:343} ERROR - Failed to import: /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py
+Traceback (most recent call last):
+  File "/Users/zihaomo/pipeline/.venv/lib/python3.11/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py", line 18, in <module>
+    from src.ingest.eventbrite import fetch_eventbrite
+ModuleNotFoundError: No module named 'src'
+[2025-04-29T17:52:35.317-0400] {processor.py:755} WARNING - No viable dags retrieved from /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py
+[2025-04-29T17:52:35.650-0400] {processor.py:175} INFO - Processing /Users/zihaomo/pipeline/airflow_home/dags/rss_ingest_dag.py took 0.366 seconds

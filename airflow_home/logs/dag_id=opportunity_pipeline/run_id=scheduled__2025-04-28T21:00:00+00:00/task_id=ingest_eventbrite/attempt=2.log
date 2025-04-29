@@ -1,0 +1,24 @@
+[2025-04-29T17:23:33.754-0400] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: opportunity_pipeline.ingest_eventbrite scheduled__2025-04-28T21:00:00+00:00 [queued]>
+[2025-04-29T17:23:33.759-0400] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: opportunity_pipeline.ingest_eventbrite scheduled__2025-04-28T21:00:00+00:00 [queued]>
+[2025-04-29T17:23:33.760-0400] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2025-04-29T17:23:33.760-0400] {taskinstance.py:1280} INFO - Starting attempt 2 of 2
+[2025-04-29T17:23:33.760-0400] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2025-04-29T17:23:33.770-0400] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): ingest_eventbrite> on 2025-04-28 21:00:00+00:00
+[2025-04-29T17:23:33.774-0400] {standard_task_runner.py:55} INFO - Started process 32365 to run task
+[2025-04-29T17:23:33.777-0400] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'opportunity_pipeline', 'ingest_eventbrite', 'scheduled__2025-04-28T21:00:00+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/opportunity_ingest_dag.py', '--cfg-path', '/var/folders/bc/zt35hlqn755d7y9zj64rxxph0000gn/T/tmpo1j28grh']
+[2025-04-29T17:23:33.779-0400] {standard_task_runner.py:83} INFO - Job 6: Subtask ingest_eventbrite
+[2025-04-29T17:23:33.823-0400] {task_command.py:388} INFO - Running <TaskInstance: opportunity_pipeline.ingest_eventbrite scheduled__2025-04-28T21:00:00+00:00 [running]> on host zihaos-macbook-pro.local
+[2025-04-29T17:23:33.849-0400] {taskinstance.py:1507} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=you
+AIRFLOW_CTX_DAG_ID=opportunity_pipeline
+AIRFLOW_CTX_TASK_ID=ingest_eventbrite
+AIRFLOW_CTX_EXECUTION_DATE=2025-04-28T21:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2025-04-28T21:00:00+00:00
+[2025-04-29T17:23:46.750-0400] {process_utils.py:129} INFO - Sending 15 to group 32365. PIDs of all processes in the group: [32365]
+[2025-04-29T17:23:46.751-0400] {process_utils.py:84} INFO - Sending the signal 15 to group 32365
+[2025-04-29T17:23:49.739-0400] {taskinstance.py:1073} INFO - Dependencies not met for <TaskInstance: opportunity_pipeline.ingest_eventbrite scheduled__2025-04-28T21:00:00+00:00 [running]>, dependency 'Task Instance Not Running' FAILED: Task is in the running state
+[2025-04-29T17:23:49.744-0400] {taskinstance.py:1073} INFO - Dependencies not met for <TaskInstance: opportunity_pipeline.ingest_eventbrite scheduled__2025-04-28T21:00:00+00:00 [running]>, dependency 'Task Instance State' FAILED: Task is in the 'running' state.
+[2025-04-29T17:23:49.745-0400] {local_task_job.py:147} INFO - Task is not able to be run
